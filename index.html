@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Bali with BaliTrails. Discover hiking, waterfalls, traditional villages, private tours, and reliable local driver services in Bangli, Bali.">
 
-    <meta name="description" content="Explore Bali with BaliTrails. Discover hiking trails, traditional villages, waterfalls, and private Bali tours.">
-
-    <title>BaliTrails | Explore Bali</title>
+    <title>BaliTrails | Explore Bali & Local Driver</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +25,7 @@
             --white: #ffffff;
             --text: #294333;
             --muted: #718078;
-            --shadow: 0 12px 35px rgba(23, 61, 36, 0.09);
+            --shadow: 0 12px 35px rgba(23,61,36,.09);
         }
 
         * {
@@ -37,7 +36,7 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 90px;
+            scroll-padding-top: 85px;
         }
 
         body {
@@ -51,21 +50,22 @@
             text-decoration: none;
         }
 
-        button,
-        input,
-        select,
-        textarea {
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        button, input, select, textarea {
             font: inherit;
         }
 
-        img {
-            display: block;
-            max-width: 100%;
+        button {
+            cursor: pointer;
         }
 
         .container {
-            width: min(1320px, 90%);
-            margin: 0 auto;
+            width: min(1200px, 90%);
+            margin: auto;
         }
 
         /* NAVBAR */
@@ -74,50 +74,51 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.97);
+            background: rgba(255,255,255,.97);
             backdrop-filter: blur(12px);
-            box-shadow: 0 2px 18px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 2px 18px rgba(0,0,0,.05);
         }
 
         .nav-inner {
-            min-height: 82px;
+            min-height: 78px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 25px;
+            gap: 20px;
         }
 
         .brand {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             color: var(--green-dark);
             font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
             font-weight: 800;
-            font-size: 27px;
+            white-space: nowrap;
         }
 
         .brand-icon {
-            width: 48px;
-            height: 48px;
+            width: 44px;
+            height: 44px;
             display: grid;
             place-items: center;
-            border-radius: 15px;
+            border-radius: 13px;
             color: white;
             background: linear-gradient(135deg, #285d36, #72c982);
-            font-size: 24px;
         }
 
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 23px;
         }
 
         .nav-links a {
             color: #425b48;
-            font-weight: 600;
-            transition: color .2s;
+            font-size: 14px;
+            font-weight: 700;
+            transition: .2s;
         }
 
         .nav-links a:hover {
@@ -128,48 +129,47 @@
             display: none;
             width: 43px;
             height: 43px;
-            border: none;
+            border: 0;
             border-radius: 10px;
             background: var(--green-light);
             color: var(--green-dark);
-            font-size: 21px;
-            cursor: pointer;
+            font-size: 20px;
         }
 
         /* BUTTONS */
 
         .btn {
             display: inline-flex;
-            justify-content: center;
             align-items: center;
-            gap: 10px;
+            justify-content: center;
+            gap: 9px;
             padding: 13px 23px;
-            border: none;
+            border: 0;
             border-radius: 50px;
             color: white;
             background: linear-gradient(135deg, #43844d, #58a75d);
             font-weight: 700;
-            cursor: pointer;
-            transition: transform .2s, box-shadow .2s;
-            box-shadow: 0 7px 20px rgba(67, 132, 77, .16);
+            box-shadow: 0 7px 20px rgba(67,132,77,.17);
+            transition: .25s;
         }
 
         .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(67, 132, 77, .25);
             color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(67,132,77,.25);
         }
 
         .btn-outline {
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            gap: 9px;
             padding: 12px 22px;
             border: 1px solid rgba(255,255,255,.8);
             border-radius: 50px;
             color: white;
             font-weight: 700;
-            transition: background .2s;
+            transition: .2s;
         }
 
         .btn-outline:hover {
@@ -180,11 +180,11 @@
         /* HERO */
 
         .hero {
-            min-height: 650px;
-            display: flex;
-            align-items: center;
+            min-height: 640px;
             position: relative;
             isolation: isolate;
+            display: flex;
+            align-items: center;
             overflow: hidden;
             color: white;
             background: #284c34;
@@ -196,8 +196,8 @@
             inset: 0;
             z-index: -2;
             background-image: url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=2000&q=85");
-            background-position: center 48%;
             background-size: cover;
+            background-position: center;
         }
 
         .hero::after {
@@ -207,15 +207,15 @@
             z-index: -1;
             background: linear-gradient(
                 90deg,
-                rgba(12, 35, 20, .88) 0%,
-                rgba(12, 35, 20, .63) 48%,
-                rgba(12, 35, 20, .12) 100%
+                rgba(12,35,20,.88),
+                rgba(12,35,20,.62) 55%,
+                rgba(12,35,20,.15)
             );
         }
 
         .hero-content {
             max-width: 750px;
-            padding: 95px 0 110px;
+            padding: 90px 0;
         }
 
         .eyebrow {
@@ -224,16 +224,16 @@
             gap: 9px;
             margin-bottom: 20px;
             color: #c9f5ce;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 800;
             letter-spacing: 2px;
         }
 
         .hero h1 {
-            margin-bottom: 23px;
+            margin-bottom: 22px;
             font-family: 'Montserrat', sans-serif;
-            font-size: clamp(43px, 6.3vw, 78px);
-            line-height: 1.12;
+            font-size: clamp(42px, 6vw, 75px);
+            line-height: 1.13;
             letter-spacing: -2px;
         }
 
@@ -242,47 +242,46 @@
         }
 
         .hero-description {
-            max-width: 620px;
-            margin-bottom: 32px;
-            color: rgba(255,255,255,.9);
-            font-size: 18px;
+            max-width: 640px;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,.91);
+            font-size: 17px;
             line-height: 1.9;
         }
 
         .hero-actions {
             display: flex;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 13px;
         }
 
         .hero-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 26px;
-            margin-top: 44px;
-            color: rgba(255,255,255,.95);
-            font-size: 14px;
+            gap: 20px;
+            margin-top: 35px;
+            font-size: 13px;
         }
 
         .hero-info span {
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            gap: 9px;
+            gap: 8px;
         }
 
         .hero-info i {
             color: #b5efbd;
         }
 
-        /* SECTION */
+        /* GENERAL SECTIONS */
 
         .section {
-            padding: 90px 0;
+            padding: 80px 0;
         }
 
         .section-heading {
-            max-width: 700px;
-            margin: 0 auto 42px;
+            max-width: 720px;
+            margin: 0 auto 40px;
             text-align: center;
         }
 
@@ -294,23 +293,25 @@
             text-transform: uppercase;
         }
 
-        .section-heading h2 {
+        .section-heading h2,
+        .about-content h2,
+        .driver-content h2,
+        .booking-intro h2 {
             margin: 12px 0;
             color: var(--green-deep);
             font-family: 'Montserrat', sans-serif;
-            font-size: clamp(29px, 4vw, 43px);
-            line-height: 1.25;
+            font-size: clamp(29px, 4vw, 42px);
+            line-height: 1.3;
         }
 
         .section-heading p {
             color: var(--muted);
-            font-size: 16px;
         }
 
         /* PACKAGES */
 
         .packages-section {
-            background: #f5faf5;
+            background: var(--cream);
         }
 
         .package-filters {
@@ -322,19 +323,18 @@
         }
 
         .filter-btn {
-            padding: 10px 19px;
+            padding: 10px 18px;
             border: 1px solid #dce9dd;
             border-radius: 50px;
             background: white;
             color: #506957;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
-            cursor: pointer;
-            transition: all .2s;
+            transition: .2s;
         }
 
-        .filter-btn:hover,
-        .filter-btn.active {
+        .filter-btn.active,
+        .filter-btn:hover {
             border-color: var(--green);
             background: var(--green);
             color: white;
@@ -342,23 +342,23 @@
 
         .package-grid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 27px;
+            grid-template-columns: repeat(3, minmax(0,1fr));
             align-items: stretch;
+            gap: 25px;
         }
 
         .package-card {
             min-width: 0;
             overflow: hidden;
-            border-radius: 20px;
+            border-radius: 19px;
             background: white;
             box-shadow: var(--shadow);
-            transition: transform .25s, box-shadow .25s;
+            transition: .25s;
         }
 
         .package-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 18px 40px rgba(23, 61, 36, .14);
+            transform: translateY(-5px);
+            box-shadow: 0 18px 40px rgba(23,61,36,.14);
         }
 
         .package-card.hidden {
@@ -366,7 +366,7 @@
         }
 
         .package-image {
-            height: 245px;
+            height: 235px;
             position: relative;
             overflow: hidden;
             background: #dce9dd;
@@ -385,37 +385,36 @@
 
         .package-tag {
             position: absolute;
-            top: 17px;
-            left: 17px;
-            padding: 7px 13px;
+            top: 15px;
+            left: 15px;
+            padding: 7px 12px;
             border-radius: 50px;
             background: #e1f7e5;
             color: var(--green-deep);
-            font-size: 11px;
+            font-size: 10px;
             font-weight: 800;
-            letter-spacing: .4px;
         }
 
         .package-content {
             display: flex;
             flex-direction: column;
-            height: calc(100% - 245px);
-            padding: 23px 25px 25px;
+            min-height: 380px;
+            padding: 22px;
         }
 
         .package-meta {
             display: flex;
             justify-content: space-between;
-            gap: 12px;
-            margin-bottom: 15px;
+            gap: 8px;
+            margin-bottom: 14px;
             color: var(--muted);
-            font-size: 14px;
+            font-size: 12px;
         }
 
         .package-meta span {
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .package-meta i {
@@ -423,60 +422,50 @@
         }
 
         .package-content h3 {
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             color: var(--green-deep);
             font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 19px;
             line-height: 1.4;
         }
 
         .package-description {
-            margin-bottom: 17px;
+            margin-bottom: 16px;
             color: #69786f;
-            font-size: 14px;
-            line-height: 1.8;
+            font-size: 13px;
         }
 
         .package-features {
             display: grid;
-            gap: 8px;
-            margin-bottom: 22px;
+            gap: 7px;
+            margin-bottom: 20px;
             list-style: none;
             color: #53675a;
-            font-size: 14px;
-        }
-
-        .package-features li {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
+            font-size: 13px;
         }
 
         .package-features i {
-            margin-top: 5px;
+            margin-right: 8px;
             color: var(--green);
         }
 
         .package-bottom {
             margin-top: auto;
-            padding-top: 18px;
+            padding-top: 16px;
             border-top: 1px solid #e9efe9;
         }
 
         .price-label {
-            display: block;
-            margin-bottom: 3px;
             color: var(--muted);
-            font-size: 13px;
+            font-size: 12px;
         }
 
         .price {
-            margin-bottom: 17px;
+            margin-bottom: 15px;
             color: var(--green-dark);
             font-family: 'Montserrat', sans-serif;
             font-size: 25px;
             font-weight: 800;
-            line-height: 1.4;
         }
 
         .price small {
@@ -488,77 +477,169 @@
 
         .book-btn {
             width: 100%;
-            padding: 12px 17px;
+            padding: 12px;
+            font-size: 13px;
+        }
+
+        /* LOCAL DRIVER */
+
+        .driver-section {
+            position: relative;
+            overflow: hidden;
+            background: white;
+        }
+
+        .driver-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 55px;
+        }
+
+        .driver-image {
+            position: relative;
+        }
+
+        .driver-image img {
+            width: 100%;
+            height: 470px;
+            object-fit: cover;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .driver-badge {
+            position: absolute;
+            right: -12px;
+            bottom: 22px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: var(--shadow);
+            color: var(--green-dark);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .driver-badge i {
+            font-size: 25px;
+            color: var(--green);
+        }
+
+        .driver-content h2 {
+            font-size: clamp(28px, 4vw, 39px);
+        }
+
+        .driver-content > p {
+            margin-bottom: 20px;
+            color: var(--muted);
+        }
+
+        .driver-highlight {
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 4px solid var(--green);
+            border-radius: 0 13px 13px 0;
+            background: var(--green-light);
+            color: var(--green-deep);
             font-size: 14px;
+        }
+
+        .driver-highlight strong {
+            display: block;
+            margin-bottom: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .driver-services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 25px 0 30px;
+        }
+
+        .driver-service {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            font-size: 13px;
+        }
+
+        .driver-service i {
+            display: grid;
+            flex: 0 0 36px;
+            width: 36px;
+            height: 36px;
+            place-items: center;
+            border-radius: 11px;
+            background: var(--green-light);
+            color: var(--green);
+        }
+
+        .driver-service strong {
+            display: block;
+            margin-bottom: 3px;
+            color: var(--green-deep);
+        }
+
+        .driver-service span {
+            color: var(--muted);
+        }
+
+        .driver-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            box-shadow: 0 7px 20px rgba(37,211,102,.18);
+        }
+
+        .btn-whatsapp:hover {
+            background: #1eaf55;
         }
 
         /* ABOUT */
 
         .about-section {
-            background: white;
+            background: #f0f7f0;
         }
 
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
-            gap: 65px;
-        }
-
-        .about-image {
-            position: relative;
+            gap: 55px;
         }
 
         .about-image img {
-            width: 100%;
-            height: 440px;
+            height: 420px;
             object-fit: cover;
             border-radius: 22px;
             box-shadow: var(--shadow);
         }
 
-        .about-badge {
-            position: absolute;
-            right: -18px;
-            bottom: 25px;
-            padding: 18px 24px;
-            border-radius: 16px;
-            background: white;
-            box-shadow: var(--shadow);
-            color: var(--green-dark);
-            font-weight: 800;
-        }
-
-        .about-badge strong {
-            display: block;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 27px;
-        }
-
-        .about-content h2 {
-            margin: 12px 0 20px;
-            color: var(--green-deep);
-            font-family: 'Montserrat', sans-serif;
-            font-size: clamp(29px, 4vw, 42px);
-            line-height: 1.25;
-        }
-
         .about-content > p {
-            margin-bottom: 23px;
+            margin-bottom: 22px;
             color: var(--muted);
         }
 
         .about-list {
             display: grid;
             gap: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 28px;
             list-style: none;
         }
 
         .about-list li {
             display: flex;
             align-items: flex-start;
-            gap: 13px;
+            gap: 12px;
         }
 
         .about-list i {
@@ -568,7 +649,7 @@
             height: 30px;
             place-items: center;
             border-radius: 50%;
-            background: var(--green-light);
+            background: #dff2e1;
             color: var(--green);
         }
 
@@ -579,55 +660,53 @@
 
         .about-list span {
             color: var(--muted);
-            font-size: 14px;
+            font-size: 13px;
         }
 
         /* BOOKING */
 
         .booking-section {
-            background: linear-gradient(135deg, #edf7ee, #f8fbf8);
+            background: linear-gradient(135deg,#edf7ee,#f8fbf8);
         }
 
         .booking-box {
             display: grid;
             grid-template-columns: .85fr 1.15fr;
-            gap: 50px;
-            padding: 45px;
+            gap: 45px;
+            padding: 40px;
             border-radius: 24px;
             background: white;
             box-shadow: var(--shadow);
         }
 
         .booking-intro h2 {
-            margin: 12px 0 17px;
-            color: var(--green-deep);
-            font-family: 'Montserrat', sans-serif;
-            font-size: 34px;
-            line-height: 1.25;
+            font-size: 33px;
         }
 
-        .booking-intro p {
+        .booking-intro > p {
             color: var(--muted);
+            font-size: 14px;
         }
 
         .booking-contact {
             display: grid;
-            gap: 15px;
-            margin-top: 27px;
+            gap: 13px;
+            margin-top: 25px;
         }
 
         .booking-contact div {
             display: flex;
             align-items: center;
-            gap: 13px;
+            gap: 12px;
             color: var(--green-dark);
+            font-size: 14px;
             font-weight: 600;
         }
 
         .booking-contact i {
+            display: grid;
             width: 39px;
             height: 39px;
-            display: grid;
             place-items: center;
             border-radius: 12px;
             background: var(--green-light);
@@ -637,12 +716,14 @@
         .booking-form {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 18px;
+            gap: 16px;
         }
 
         .form-group {
             display: grid;
+            align-content: start;
             gap: 7px;
+            min-width: 0;
         }
 
         .form-group.full {
@@ -651,7 +732,7 @@
 
         .form-group label {
             color: #3f5947;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 700;
         }
 
@@ -660,20 +741,20 @@
         .form-group textarea {
             width: 100%;
             min-width: 0;
-            padding: 13px 14px;
+            padding: 12px;
             border: 1px solid #dfe8df;
             border-radius: 10px;
             outline: none;
             background: #fbfdfb;
             color: var(--text);
-            transition: border .2s, box-shadow .2s;
+            font-size: 13px;
         }
 
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
             border-color: var(--green);
-            box-shadow: 0 0 0 3px rgba(67, 132, 77, .1);
+            box-shadow: 0 0 0 3px rgba(67,132,77,.1);
         }
 
         .form-group textarea {
@@ -688,22 +769,22 @@
         .form-note {
             grid-column: 1 / -1;
             color: var(--muted);
-            font-size: 12px;
+            font-size: 11px;
         }
 
         /* FOOTER */
 
         footer {
-            padding: 55px 0 20px;
-            background: #173d24;
+            padding: 50px 0 20px;
+            background: var(--green-deep);
             color: rgba(255,255,255,.8);
         }
 
         .footer-grid {
             display: grid;
             grid-template-columns: 1.4fr 1fr 1fr;
-            gap: 40px;
-            padding-bottom: 35px;
+            gap: 35px;
+            padding-bottom: 32px;
         }
 
         .footer-brand {
@@ -712,23 +793,22 @@
         }
 
         .footer-description {
-            max-width: 360px;
-            font-size: 14px;
-            line-height: 1.9;
+            max-width: 370px;
+            font-size: 13px;
         }
 
         .footer-heading {
-            margin-bottom: 16px;
+            margin-bottom: 15px;
             color: white;
             font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
+            font-size: 15px;
         }
 
         .footer-links {
             display: grid;
-            gap: 10px;
+            gap: 9px;
             list-style: none;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .footer-links a {
@@ -743,10 +823,10 @@
             padding-top: 20px;
             border-top: 1px solid rgba(255,255,255,.14);
             text-align: center;
-            font-size: 13px;
+            font-size: 12px;
         }
 
-        /* WHATSAPP FLOAT */
+        /* FLOATING WHATSAPP */
 
         .whatsapp-float {
             position: fixed;
@@ -762,7 +842,7 @@
             color: white;
             box-shadow: 0 8px 25px rgba(0,0,0,.2);
             font-size: 28px;
-            transition: transform .2s;
+            transition: .2s;
         }
 
         .whatsapp-float:hover {
@@ -773,37 +853,41 @@
         /* RESPONSIVE */
 
         @media (max-width: 1050px) {
-            .package-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+            .nav-links {
+                gap: 13px;
             }
 
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .package-grid {
+                grid-template-columns: repeat(2,minmax(0,1fr));
+            }
+
+            .driver-grid,
             .about-grid {
-                gap: 35px;
+                gap: 30px;
             }
 
             .booking-box {
-                gap: 30px;
-                padding: 30px;
-            }
-
-            .nav-links {
-                gap: 18px;
+                gap: 25px;
+                padding: 28px;
             }
         }
 
         @media (max-width: 760px) {
             .nav-inner {
-                min-height: 72px;
+                min-height: 70px;
             }
 
             .brand {
-                font-size: 23px;
+                font-size: 22px;
             }
 
             .brand-icon {
-                width: 42px;
-                height: 42px;
-                font-size: 21px;
+                width: 40px;
+                height: 40px;
             }
 
             .nav-toggle {
@@ -813,7 +897,7 @@
 
             .nav-links {
                 position: absolute;
-                top: 72px;
+                top: 70px;
                 left: 0;
                 right: 0;
                 display: none;
@@ -830,19 +914,21 @@
             }
 
             .nav-links a {
-                padding: 12px 0;
+                padding: 11px 0;
+                font-size: 14px;
             }
 
             .nav-links .btn {
                 margin-top: 8px;
+                padding: 12px;
             }
 
             .hero {
-                min-height: 600px;
+                min-height: 580px;
             }
 
             .hero-content {
-                padding: 80px 0;
+                padding: 75px 0;
             }
 
             .hero h1 {
@@ -850,43 +936,43 @@
             }
 
             .hero-description {
-                font-size: 16px;
+                font-size: 15px;
             }
 
             .hero-info {
-                gap: 13px 20px;
+                gap: 12px 18px;
             }
 
             .section {
-                padding: 65px 0;
+                padding: 60px 0;
             }
 
             .package-grid {
                 grid-template-columns: 1fr;
                 max-width: 520px;
-                margin: 0 auto;
-            }
-
-            .package-image {
-                height: 260px;
+                margin: auto;
             }
 
             .package-content {
-                height: auto;
                 min-height: 0;
             }
 
+            .driver-grid,
             .about-grid,
             .booking-box {
                 grid-template-columns: 1fr;
             }
 
-            .about-image img {
-                height: 330px;
+            .driver-image img {
+                height: 350px;
             }
 
-            .about-badge {
-                right: 12px;
+            .driver-badge {
+                right: 10px;
+            }
+
+            .about-image img {
+                height: 330px;
             }
 
             .booking-box {
@@ -895,7 +981,7 @@
 
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
-                gap: 30px;
+                gap: 25px;
             }
 
             .footer-grid > div:first-child {
@@ -908,13 +994,15 @@
                 width: 91%;
             }
 
-            .hero-actions {
+            .hero-actions,
+            .driver-actions {
                 flex-direction: column;
                 align-items: stretch;
             }
 
             .hero-actions .btn,
-            .hero-actions .btn-outline {
+            .hero-actions .btn-outline,
+            .driver-actions .btn {
                 width: 100%;
             }
 
@@ -923,8 +1011,12 @@
             }
 
             .filter-btn {
-                padding: 8px 12px;
-                font-size: 12px;
+                padding: 8px 11px;
+                font-size: 11px;
+            }
+
+            .driver-services {
+                grid-template-columns: 1fr;
             }
 
             .booking-form {
@@ -942,10 +1034,6 @@
 
             .footer-grid > div:first-child {
                 grid-column: auto;
-            }
-
-            .price {
-                font-size: 23px;
             }
         }
     </style>
@@ -967,9 +1055,9 @@
             <button
                 class="nav-toggle"
                 id="navToggle"
+                type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
-                type="button"
             >
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -977,6 +1065,7 @@
             <nav class="nav-links" id="navLinks">
                 <a href="#home">Home</a>
                 <a href="#packages">Packages</a>
+                <a href="#driver">Local Driver</a>
                 <a href="#about">About Bali</a>
                 <a href="#contact">Contact</a>
 
@@ -1007,20 +1096,22 @@
                     </h1>
 
                     <p class="hero-description">
-                        Discover the real beauty of Bali through scenic hiking
-                        trails, traditional villages, lush rice fields,
-                        tropical forests, and breathtaking waterfalls.
-                        Your unforgettable Bali journey starts here.
+                        Discover the real beauty of Bali through scenic
+                        hiking trails, traditional villages, green rice
+                        fields, tropical forests, and breathtaking waterfalls.
+                        Explore Bali with a local guide or private driver
+                        based in Bangli.
                     </p>
 
                     <div class="hero-actions">
                         <a href="#packages" class="btn">
+                            <i class="fa-solid fa-compass"></i>
                             Explore Packages
-                            <i class="fa-solid fa-arrow-right"></i>
                         </a>
 
-                        <a href="#about" class="btn-outline">
-                            Discover Bali
+                        <a href="#driver" class="btn-outline">
+                            <i class="fa-solid fa-car"></i>
+                            Need a Local Driver?
                         </a>
                     </div>
 
@@ -1036,8 +1127,8 @@
                         </span>
 
                         <span>
-                            <i class="fa-solid fa-camera"></i>
-                            Authentic Experiences
+                            <i class="fa-solid fa-car"></i>
+                            Private Driver
                         </span>
                     </div>
 
@@ -1045,7 +1136,7 @@
             </div>
         </section>
 
-        <!-- PACKAGES -->
+        <!-- TOUR PACKAGES -->
         <section class="section packages-section" id="packages">
             <div class="container">
 
@@ -1053,8 +1144,8 @@
                     <span class="section-label">OUR EXPERIENCES</span>
                     <h2>Explore Our Bali Packages</h2>
                     <p>
-                        Choose your favorite adventure and discover the
-                        beautiful landscapes, culture, and nature of Bali.
+                        Choose your favorite adventure and discover Bali's
+                        beautiful landscapes, culture, and nature.
                     </p>
                 </div>
 
@@ -1074,7 +1165,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=85"
-                                alt="Beautiful Balinese temple and scenery"
+                                alt="Balinese temple and tropical landscape"
                                 loading="lazy"
                             >
                             <span class="package-tag">CULTURE & SCENERY</span>
@@ -1089,9 +1180,8 @@
                             <h3>East Bali Package</h3>
 
                             <p class="package-description">
-                                Discover the charm of East Bali through
-                                beautiful landscapes, local culture,
-                                and memorable destinations.
+                                Discover beautiful landscapes, local culture,
+                                and memorable destinations in East Bali.
                             </p>
 
                             <ul class="package-features">
@@ -1131,9 +1221,8 @@
                             <h3>Bali Hiking Experience</h3>
 
                             <p class="package-description">
-                                Walk through beautiful countryside,
-                                green hills, village paths, and
-                                tropical natural surroundings.
+                                Walk through countryside paths, green hills,
+                                villages, and tropical surroundings.
                             </p>
 
                             <ul class="package-features">
@@ -1158,7 +1247,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85"
-                                alt="Traditional Balinese temple and landscape"
+                                alt="Traditional Balinese village scenery"
                                 loading="lazy"
                             >
                             <span class="package-tag">CULTURAL DISCOVERY</span>
@@ -1173,8 +1262,8 @@
                             <h3>Traditional Village Tour</h3>
 
                             <p class="package-description">
-                                Experience traditional Balinese architecture,
-                                village life, and local cultural heritage.
+                                Experience traditional architecture, village
+                                life, and Balinese cultural heritage.
                             </p>
 
                             <ul class="package-features">
@@ -1214,9 +1303,8 @@
                             <h3>Waterfall Adventure</h3>
 
                             <p class="package-description">
-                                Enjoy a refreshing journey through lush
-                                tropical scenery and discover beautiful
-                                waterfalls.
+                                Enjoy lush tropical scenery and discover
+                                beautiful waterfalls around Bali.
                             </p>
 
                             <ul class="package-features">
@@ -1241,7 +1329,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
-                                alt="Scenic natural landscape for photography"
+                                alt="Beautiful scenery for a Bali photo tour"
                                 loading="lazy"
                             >
                             <span class="package-tag">SCENIC JOURNEY</span>
@@ -1257,8 +1345,7 @@
 
                             <p class="package-description">
                                 Explore scenic locations and capture
-                                memorable moments of Bali's beautiful
-                                natural landscapes.
+                                memorable moments of Bali's landscapes.
                             </p>
 
                             <ul class="package-features">
@@ -1283,7 +1370,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
-                                alt="Mountain scenery for an outdoor adventure"
+                                alt="Mountain landscape for an outdoor adventure"
                                 loading="lazy"
                             >
                             <span class="package-tag">OUTDOOR ADVENTURE</span>
@@ -1298,9 +1385,8 @@
                             <h3>Private Adventure Trip</h3>
 
                             <p class="package-description">
-                                Plan a personalized outdoor adventure
-                                based on your preferred destinations
-                                and travel schedule.
+                                Plan a personalized adventure with
+                                destinations and schedules that suit you.
                             </p>
 
                             <ul class="package-features">
@@ -1324,7 +1410,149 @@
             </div>
         </section>
 
-        <!-- ABOUT -->
+        <!-- LOCAL DRIVER SECTION -->
+        <section class="section driver-section" id="driver">
+            <div class="container">
+                <div class="driver-grid">
+
+                    <div class="driver-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1100&q=85"
+                            alt="Beautiful Bali scenery for a private driver trip"
+                            loading="lazy"
+                        >
+
+                        <div class="driver-badge">
+                            <i class="fa-solid fa-car-side"></i>
+                            <span>
+                                Local Driver in Bangli
+                                <br>
+                                <small>Explore Bali at your own pace</small>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="driver-content">
+                        <span class="section-label">LOCAL DRIVER SERVICE</span>
+
+                        <h2>Staying in Bangli, Bali? Need a Local Driver?</h2>
+
+                        <p>
+                            Hello everyone! If you're staying in Bangli or
+                            the surrounding area and need a reliable local
+                            taxi or private driver, feel free to contact me.
+                        </p>
+
+                        <p>
+                            I'm a local driver based in Bangli and I'm happy
+                            to help you discover beautiful places around Bali.
+                            Whether you need an airport transfer, a hotel
+                            pickup, or a full-day trip, you can discuss your
+                            travel plans directly with me through WhatsApp.
+                        </p>
+
+                        <div class="driver-highlight">
+                            <strong>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Based in Bangli, Bali
+                            </strong>
+
+                            Local transport for visitors staying in Bangli
+                            and surrounding areas. Pick-up times, destinations,
+                            and prices can be discussed directly.
+                        </div>
+
+                        <div class="driver-services">
+
+                            <div class="driver-service">
+                                <i class="fa-solid fa-plane"></i>
+                                <div>
+                                    <strong>Airport Transfers</strong>
+                                    <span>Airport, hotel, and accommodation transfers.</span>
+                                </div>
+                            </div>
+
+                            <div class="driver-service">
+                                <i class="fa-solid fa-car"></i>
+                                <div>
+                                    <strong>Private Driver</strong>
+                                    <span>Private trips around Bangli and Bali.</span>
+                                </div>
+                            </div>
+
+                            <div class="driver-service">
+                                <i class="fa-solid fa-water"></i>
+                                <div>
+                                    <strong>Waterfall & Nature</strong>
+                                    <span>Visit waterfalls and natural attractions.</span>
+                                </div>
+                            </div>
+
+                            <div class="driver-service">
+                                <i class="fa-solid fa-place-of-worship"></i>
+                                <div>
+                                    <strong>Temple & Culture</strong>
+                                    <span>Discover temples and Balinese traditions.</span>
+                                </div>
+                            </div>
+
+                            <div class="driver-service">
+                                <i class="fa-solid fa-wheat-awn"></i>
+                                <div>
+                                    <strong>Rice Fields & Villages</strong>
+                                    <span>Explore rural landscapes and traditional villages.</span>
+                                </div>
+                            </div>
+
+                            <div class="driver-service">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <div>
+                                    <strong>Ubud, Sanur & More</strong>
+                                    <span>Ask about destinations throughout Bali.</span>
+                                </div>
+                            </div>
+
+                            <div class="driver-service">
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    <strong>Flexible Schedule</strong>
+                                    <span>Discuss your preferred pickup and drop-off.</span>
+                                </div>
+                            </div>
+
+                            <div class="driver-service">
+                                <i class="fa-solid fa-comments"></i>
+                                <div>
+                                    <strong>Direct Communication</strong>
+                                    <span>Discuss your itinerary and requirements.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="driver-actions">
+                            <a
+                                href="https://wa.me/6281353996452?text=Hello%2C%20I%20am%20staying%20in%20Bangli%20and%20need%20a%20local%20driver.%20Could%20you%20please%20share%20your%20availability%20and%20prices%3F"
+                                class="btn btn-whatsapp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Contact Local Driver
+                            </a>
+
+                            <a href="#contact" class="btn">
+                                Request a Booking
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT BALI -->
         <section class="section about-section" id="about">
             <div class="container">
                 <div class="about-grid">
@@ -1332,14 +1560,9 @@
                     <div class="about-image">
                         <img
                             src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1100&q=85"
-                            alt="Beautiful nature and Balinese culture"
+                            alt="Beautiful Balinese scenery and culture"
                             loading="lazy"
                         >
-
-                        <div class="about-badge">
-                            <strong>Bali</strong>
-                            Island of the Gods
-                        </div>
                     </div>
 
                     <div class="about-content">
@@ -1351,7 +1574,7 @@
                             BaliTrails invites you to explore more than
                             famous tourist attractions. Discover traditional
                             villages, beautiful countryside, peaceful forests,
-                            and breathtaking natural destinations.
+                            waterfalls, and unforgettable local experiences.
                         </p>
 
                         <ul class="about-list">
@@ -1368,6 +1591,14 @@
                                 <div>
                                     <strong>Beautiful Nature</strong>
                                     <span>Enjoy green hills, forests, and waterfalls.</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-car-side"></i>
+                                <div>
+                                    <strong>Local Driver Service</strong>
+                                    <span>Discuss your transportation needs directly.</span>
                                 </div>
                             </li>
 
@@ -1390,7 +1621,7 @@
             </div>
         </section>
 
-        <!-- BOOKING -->
+        <!-- BOOKING FORM -->
         <section class="section booking-section" id="contact">
             <div class="container">
 
@@ -1398,8 +1629,8 @@
                     <span class="section-label">LET'S PLAN YOUR TRIP</span>
                     <h2>Book Your Bali Adventure</h2>
                     <p>
-                        Complete the form and continue your booking
-                        directly through WhatsApp.
+                        Complete the form and send your booking details
+                        directly to our WhatsApp.
                     </p>
                 </div>
 
@@ -1411,9 +1642,9 @@
                         <h2>Your Next Adventure Starts Here</h2>
 
                         <p>
-                            Tell us which package you would like to explore.
-                            Your booking details will be prepared in a
-                            WhatsApp message so you can send them directly.
+                            Tell us which tour package or transport service
+                            you need. Your booking details will be prepared
+                            in a WhatsApp message for you to send.
                         </p>
 
                         <div class="booking-contact">
@@ -1429,7 +1660,12 @@
 
                             <div>
                                 <i class="fa-solid fa-calendar-check"></i>
-                                <span>Flexible travel dates</span>
+                                <span>Flexible Travel Dates</span>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-car"></i>
+                                <span>Tour Packages & Private Driver</span>
                             </div>
                         </div>
                     </div>
@@ -1442,7 +1678,7 @@
                                 type="text"
                                 id="customerName"
                                 name="customerName"
-                                placeholder="Enter your name"
+                                placeholder="Enter your full name"
                                 autocomplete="name"
                                 required
                             >
@@ -1461,15 +1697,30 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="packageSelect">Choose Package *</label>
+                            <label for="bookingType">Booking Type *</label>
+                            <select id="bookingType" name="bookingType" required>
+                                <option value="Tour Package">Tour Package</option>
+                                <option value="Local Driver / Taxi">Local Driver / Taxi</option>
+                                <option value="Airport Transfer">Airport Transfer</option>
+                                <option value="Hotel Transfer">Hotel Transfer</option>
+                                <option value="Custom Private Trip">Custom Private Trip</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="packageSelect">Choose Package / Service *</label>
                             <select id="packageSelect" name="packageSelect" required>
-                                <option value="">Select a package</option>
+                                <option value="">Select a service</option>
                                 <option value="East Bali Package">East Bali Package — $40/car</option>
                                 <option value="Bali Hiking Experience">Bali Hiking Experience — $22/person</option>
                                 <option value="Traditional Village Tour">Traditional Village Tour — $28/car</option>
                                 <option value="Waterfall Adventure">Waterfall Adventure — $25/person</option>
                                 <option value="Bali Scenic Photo Tour">Bali Scenic Photo Tour — $32/car</option>
                                 <option value="Private Adventure Trip">Private Adventure Trip — $48/car</option>
+                                <option value="Airport Transfer">Airport Transfer — Price on Request</option>
+                                <option value="Hotel Transfer">Hotel Transfer — Price on Request</option>
+                                <option value="Local Driver Around Bali">Local Driver Around Bali — Price on Request</option>
+                                <option value="Custom Destination">Other Destination — Price on Request</option>
                             </select>
                         </div>
 
@@ -1497,12 +1748,23 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="pickupLocation">Pickup Location</label>
+                            <label for="pickupLocation">Pickup Location *</label>
                             <input
                                 type="text"
                                 id="pickupLocation"
                                 name="pickupLocation"
-                                placeholder="Hotel or pickup address"
+                                placeholder="Hotel, airport, or address"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input
+                                type="text"
+                                id="destination"
+                                name="destination"
+                                placeholder="Ubud, Sanur, waterfall, etc."
                             >
                         </div>
 
@@ -1511,21 +1773,21 @@
                             <textarea
                                 id="bookingMessage"
                                 name="bookingMessage"
-                                placeholder="Tell us about your trip plans..."
+                                placeholder="Pickup time, flight details, destinations, or other requests..."
                             ></textarea>
                         </div>
 
                         <div class="form-group full">
-                            <button type="submit" class="btn">
+                            <button type="submit" class="btn btn-whatsapp">
                                 <i class="fa-brands fa-whatsapp"></i>
                                 Send Booking to WhatsApp
                             </button>
                         </div>
 
                         <p class="form-note">
-                            Prices are starting prices in USD. Final costs,
-                            inclusions, and availability must be confirmed
-                            with the tour provider.
+                            Prices displayed are starting prices in USD.
+                            Driver rates, availability, inclusions, and final
+                            costs must be confirmed directly with the provider.
                         </p>
 
                     </form>
@@ -1552,8 +1814,8 @@
 
                     <p class="footer-description">
                         Explore Bali beyond the ordinary. Discover the
-                        island's nature, culture, villages, and unforgettable
-                        outdoor experiences.
+                        island's nature, culture, villages, waterfalls,
+                        and local driver services based in Bangli.
                     </p>
                 </div>
 
@@ -1563,34 +1825,36 @@
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#packages">Our Packages</a></li>
+                        <li><a href="#driver">Local Driver</a></li>
                         <li><a href="#about">About Bali</a></li>
                         <li><a href="#contact">Contact & Booking</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="footer-heading">Our Experiences</h3>
+                    <h3 class="footer-heading">Our Services</h3>
 
                     <ul class="footer-links">
                         <li><a href="#packages">Hiking Adventures</a></li>
                         <li><a href="#packages">Cultural Tours</a></li>
                         <li><a href="#packages">Waterfall Trips</a></li>
-                        <li><a href="#packages">Private Tours</a></li>
+                        <li><a href="#driver">Airport Transfers</a></li>
+                        <li><a href="#driver">Private Driver</a></li>
                     </ul>
                 </div>
 
             </div>
 
             <div class="footer-bottom">
-                &copy; 2026 BaliTrails — Explore Bali, Discover Yourself.
+                &copy; {{ date('Y') }} BaliTrails — Explore Bali, Discover Yourself.
             </div>
 
         </div>
     </footer>
 
-    <!-- FLOATING WHATSAPP BUTTON -->
+    <!-- FLOATING WHATSAPP -->
     <a
-        href="https://wa.me/6281353996452?text=Hello%20BaliTrails%2C%20I%20would%20like%20to%20ask%20about%20your%20tour%20packages."
+        href="https://wa.me/6281353996452?text=Hello%20BaliTrails%2C%20I%20would%20like%20to%20ask%20about%20your%20tour%20packages%20and%20local%20driver%20services."
         class="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
@@ -1600,7 +1864,17 @@
     </a>
 
     <script>
-        // MOBILE NAVIGATION
+        /* ========================================
+           WHATSAPP ADMIN NUMBER
+           International format without + or spaces.
+        ======================================== */
+
+        const WHATSAPP_NUMBER = '6281353996452';
+
+        /* ========================================
+           MOBILE NAVIGATION
+        ======================================== */
+
         const navToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
 
@@ -1617,12 +1891,17 @@
         document.querySelectorAll('#navLinks a').forEach(function (link) {
             link.addEventListener('click', function () {
                 navLinks.classList.remove('open');
+
                 navToggle.setAttribute('aria-expanded', 'false');
+
                 navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
             });
         });
 
-        // PACKAGE FILTER
+        /* ========================================
+           PACKAGE FILTER
+        ======================================== */
+
         const filterButtons = document.querySelectorAll('.filter-btn');
         const packageCards = document.querySelectorAll('.package-card');
 
@@ -1647,29 +1926,48 @@
             });
         });
 
-        // WHATSAPP ADMIN NUMBER
-        // International format without +, spaces, or hyphens.
-        const WHATSAPP_NUMBER = '6281353996452';
+        /* ========================================
+           PACKAGE PRICES
+        ======================================== */
 
-        // PACKAGE PRICES IN US DOLLARS
         const packagePrices = {
             'East Bali Package': '$40 / car',
             'Bali Hiking Experience': '$22 / person',
             'Traditional Village Tour': '$28 / car',
             'Waterfall Adventure': '$25 / person',
             'Bali Scenic Photo Tour': '$32 / car',
-            'Private Adventure Trip': '$48 / car'
+            'Private Adventure Trip': '$48 / car',
+            'Airport Transfer': 'Price on Request',
+            'Hotel Transfer': 'Price on Request',
+            'Local Driver Around Bali': 'Price on Request',
+            'Custom Destination': 'Price on Request'
         };
 
-        // OPEN WHATSAPP WITH BOOKING MESSAGE
-        function openWhatsApp(message) {
-            const url = 'https://wa.me/' + WHATSAPP_NUMBER
-                + '?text=' + encodeURIComponent(message);
+        /* ========================================
+           OPEN WHATSAPP
+        ======================================== */
 
-            window.open(url, '_blank', 'noopener,noreferrer');
+        function openWhatsApp(message) {
+            const url = 'https://wa.me/'
+                + WHATSAPP_NUMBER
+                + '?text='
+                + encodeURIComponent(message);
+
+            const newWindow = window.open(
+                url,
+                '_blank',
+                'noopener,noreferrer'
+            );
+
+            if (!newWindow) {
+                window.location.href = url;
+            }
         }
 
-        // BOOK DIRECTLY FROM A PACKAGE CARD
+        /* ========================================
+           BOOK DIRECTLY FROM PACKAGE CARDS
+        ======================================== */
+
         document.querySelectorAll('.book-btn').forEach(function (button) {
             button.addEventListener('click', function () {
                 const selectedPackage = this.dataset.package;
@@ -1677,19 +1975,25 @@
 
                 const message =
                     'NEW BOOKING - BALITRAILS\n\n'
+                    + 'Booking Type: Tour Package\n'
                     + 'Package: ' + selectedPackage + '\n'
                     + 'Starting Price: ' + price + '\n\n'
-                    + 'Hello BaliTrails! I would like to ask about availability and booking.';
+                    + 'Hello BaliTrails! I would like to ask about '
+                    + 'availability, itinerary, and final pricing.';
 
                 openWhatsApp(message);
             });
         });
 
-        // BOOKING FORM
+        /* ========================================
+           BOOKING FORM
+        ======================================== */
+
         const bookingForm = document.getElementById('bookingForm');
+
         const travelDateInput = document.getElementById('travelDate');
 
-        // Set the minimum travel date to today.
+        // Use the visitor's local date as the minimum booking date.
         const today = new Date();
 
         const localToday = new Date(
@@ -1697,6 +2001,24 @@
         ).toISOString().split('T')[0];
 
         travelDateInput.min = localToday;
+
+        // Update booking type when the selected service changes.
+        const packageSelect = document.getElementById('packageSelect');
+        const bookingType = document.getElementById('bookingType');
+
+        packageSelect.addEventListener('change', function () {
+            const service = this.value;
+
+            if (service === 'Airport Transfer') {
+                bookingType.value = 'Airport Transfer';
+            } else if (service === 'Hotel Transfer') {
+                bookingType.value = 'Hotel Transfer';
+            } else if (service === 'Local Driver Around Bali') {
+                bookingType.value = 'Local Driver / Taxi';
+            } else if (service === 'Custom Destination') {
+                bookingType.value = 'Custom Private Trip';
+            }
+        });
 
         bookingForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -1707,29 +2029,39 @@
             const customerPhone =
                 document.getElementById('customerPhone').value.trim();
 
-            const selectedPackage =
-                document.getElementById('packageSelect').value;
+            const selectedType = bookingType.value;
+
+            const selectedPackage = packageSelect.value;
 
             const guestCount =
                 document.getElementById('guestCount').value;
 
-            const travelDate =
-                document.getElementById('travelDate').value;
+            const travelDate = travelDateInput.value;
 
             const pickupLocation =
                 document.getElementById('pickupLocation').value.trim();
 
-            const bookingMessage =
+            const destination =
+                document.getElementById('destination').value.trim();
+
+            const additionalRequests =
                 document.getElementById('bookingMessage').value.trim();
 
             if (
                 !customerName ||
                 !customerPhone ||
+                !selectedType ||
                 !selectedPackage ||
                 !guestCount ||
-                !travelDate
+                !travelDate ||
+                !pickupLocation
             ) {
                 alert('Please complete all required booking fields.');
+                return;
+            }
+
+            if (!/^[0-9+()\-\s]{7,25}$/.test(customerPhone)) {
+                alert('Please enter a valid WhatsApp phone number.');
                 return;
             }
 
@@ -1743,19 +2075,24 @@
                 return;
             }
 
-            const price = packagePrices[selectedPackage];
+            const price = packagePrices[selectedPackage]
+                || 'Price on Request';
 
             const message =
                 'NEW BOOKING - BALITRAILS\n\n'
                 + 'Customer Name: ' + customerName + '\n'
                 + 'Customer WhatsApp: ' + customerPhone + '\n'
-                + 'Package: ' + selectedPackage + '\n'
+                + 'Booking Type: ' + selectedType + '\n'
+                + 'Package / Service: ' + selectedPackage + '\n'
                 + 'Starting Price: ' + price + '\n'
                 + 'Number of Guests: ' + guestCount + '\n'
                 + 'Travel Date: ' + travelDate + '\n'
-                + 'Pickup Location: ' + (pickupLocation || 'Not specified') + '\n'
-                + 'Additional Requests: ' + (bookingMessage || 'None') + '\n\n'
-                + 'Please confirm availability and the final price.';
+                + 'Pickup Location: ' + pickupLocation + '\n'
+                + 'Destination: ' + (destination || 'Not specified') + '\n'
+                + 'Additional Requests: '
+                + (additionalRequests || 'None') + '\n\n'
+                + 'Please confirm availability, final pricing, '
+                + 'and the trip details.';
 
             openWhatsApp(message);
         });
