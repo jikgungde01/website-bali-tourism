@@ -1,6 +1,6 @@
 ```html
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -274,7 +274,7 @@
             color: #b5efbd;
         }
 
-        /* SECTION HEADER */
+        /* SECTION */
 
         .section {
             padding: 90px 0;
@@ -967,7 +967,7 @@
             <button
                 class="nav-toggle"
                 id="navToggle"
-                aria-label="Buka menu navigasi"
+                aria-label="Open navigation menu"
                 aria-expanded="false"
                 type="button"
             >
@@ -979,6 +979,7 @@
                 <a href="#packages">Packages</a>
                 <a href="#about">About Bali</a>
                 <a href="#contact">Contact</a>
+
                 <a href="#packages" class="btn">
                     Explore Packages
                     <i class="fa-solid fa-arrow-right"></i>
@@ -1058,29 +1059,12 @@
                 </div>
 
                 <div class="package-filters">
-                    <button class="filter-btn active" data-filter="all" type="button">
-                        All Packages
-                    </button>
-
-                    <button class="filter-btn" data-filter="culture" type="button">
-                        Culture
-                    </button>
-
-                    <button class="filter-btn" data-filter="hiking" type="button">
-                        Hiking
-                    </button>
-
-                    <button class="filter-btn" data-filter="nature" type="button">
-                        Nature
-                    </button>
-
-                    <button class="filter-btn" data-filter="adventure" type="button">
-                        Adventure
-                    </button>
-
-                    <button class="filter-btn" data-filter="photo" type="button">
-                        Photo Tour
-                    </button>
+                    <button class="filter-btn active" data-filter="all" type="button">All Packages</button>
+                    <button class="filter-btn" data-filter="culture" type="button">Culture</button>
+                    <button class="filter-btn" data-filter="hiking" type="button">Hiking</button>
+                    <button class="filter-btn" data-filter="nature" type="button">Nature</button>
+                    <button class="filter-btn" data-filter="adventure" type="button">Adventure</button>
+                    <button class="filter-btn" data-filter="photo" type="button">Photo Tour</button>
                 </div>
 
                 <div class="package-grid">
@@ -1090,7 +1074,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=900&q=85"
-                                alt="Pemandangan pura dan alam Bali"
+                                alt="Beautiful Balinese temple and scenery"
                                 loading="lazy"
                             >
                             <span class="package-tag">CULTURE & SCENERY</span>
@@ -1118,12 +1102,10 @@
 
                             <div class="package-bottom">
                                 <span class="price-label">Starting from</span>
-                                <div class="price">Rp650.000 <small>/ car</small></div>
+                                <div class="price">$40 <small>/ car</small></div>
 
-                                <button class="btn book-btn" type="button"
-                                    data-package="East Bali Package">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    Book Now
+                                <button class="btn book-btn" type="button" data-package="East Bali Package">
+                                    <i class="fa-brands fa-whatsapp"></i> Book Now
                                 </button>
                             </div>
                         </div>
@@ -1134,7 +1116,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=85"
-                                alt="Pengalaman mendaki di alam terbuka"
+                                alt="Hiking through beautiful natural landscapes"
                                 loading="lazy"
                             >
                             <span class="package-tag">HIKING EXPERIENCE</span>
@@ -1162,12 +1144,10 @@
 
                             <div class="package-bottom">
                                 <span class="price-label">Starting from</span>
-                                <div class="price">Rp350.000 <small>/ person</small></div>
+                                <div class="price">$22 <small>/ person</small></div>
 
-                                <button class="btn book-btn" type="button"
-                                    data-package="Bali Hiking Experience">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    Book Now
+                                <button class="btn book-btn" type="button" data-package="Bali Hiking Experience">
+                                    <i class="fa-brands fa-whatsapp"></i> Book Now
                                 </button>
                             </div>
                         </div>
@@ -1178,7 +1158,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85"
-                                alt="Pura dan pemandangan tradisional Bali"
+                                alt="Traditional Balinese temple and landscape"
                                 loading="lazy"
                             >
                             <span class="package-tag">CULTURAL DISCOVERY</span>
@@ -1205,12 +1185,10 @@
 
                             <div class="package-bottom">
                                 <span class="price-label">Starting from</span>
-                                <div class="price">Rp450.000 <small>/ car</small></div>
+                                <div class="price">$28 <small>/ car</small></div>
 
-                                <button class="btn book-btn" type="button"
-                                    data-package="Traditional Village Tour">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    Book Now
+                                <button class="btn book-btn" type="button" data-package="Traditional Village Tour">
+                                    <i class="fa-brands fa-whatsapp"></i> Book Now
                                 </button>
                             </div>
                         </div>
@@ -1221,7 +1199,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=900&q=85"
-                                alt="Air terjun di tengah hutan tropis"
+                                alt="Waterfall surrounded by tropical forest"
                                 loading="lazy"
                             >
                             <span class="package-tag">NATURE ESCAPE</span>
@@ -1249,12 +1227,10 @@
 
                             <div class="package-bottom">
                                 <span class="price-label">Starting from</span>
-                                <div class="price">Rp400.000 <small>/ person</small></div>
+                                <div class="price">$25 <small>/ person</small></div>
 
-                                <button class="btn book-btn" type="button"
-                                    data-package="Waterfall Adventure">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    Book Now
+                                <button class="btn book-btn" type="button" data-package="Waterfall Adventure">
+                                    <i class="fa-brands fa-whatsapp"></i> Book Now
                                 </button>
                             </div>
                         </div>
@@ -1265,7 +1241,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
-                                alt="Pemandangan alam untuk wisata fotografi"
+                                alt="Scenic natural landscape for photography"
                                 loading="lazy"
                             >
                             <span class="package-tag">SCENIC JOURNEY</span>
@@ -1293,12 +1269,10 @@
 
                             <div class="package-bottom">
                                 <span class="price-label">Starting from</span>
-                                <div class="price">Rp500.000 <small>/ car</small></div>
+                                <div class="price">$32 <small>/ car</small></div>
 
-                                <button class="btn book-btn" type="button"
-                                    data-package="Bali Scenic Photo Tour">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    Book Now
+                                <button class="btn book-btn" type="button" data-package="Bali Scenic Photo Tour">
+                                    <i class="fa-brands fa-whatsapp"></i> Book Now
                                 </button>
                             </div>
                         </div>
@@ -1309,7 +1283,7 @@
                         <div class="package-image">
                             <img
                                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
-                                alt="Pemandangan pegunungan dan alam"
+                                alt="Mountain scenery for an outdoor adventure"
                                 loading="lazy"
                             >
                             <span class="package-tag">OUTDOOR ADVENTURE</span>
@@ -1337,12 +1311,10 @@
 
                             <div class="package-bottom">
                                 <span class="price-label">Starting from</span>
-                                <div class="price">Rp750.000 <small>/ car</small></div>
+                                <div class="price">$48 <small>/ car</small></div>
 
-                                <button class="btn book-btn" type="button"
-                                    data-package="Private Adventure Trip">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    Book Now
+                                <button class="btn book-btn" type="button" data-package="Private Adventure Trip">
+                                    <i class="fa-brands fa-whatsapp"></i> Book Now
                                 </button>
                             </div>
                         </div>
@@ -1360,7 +1332,7 @@
                     <div class="about-image">
                         <img
                             src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1100&q=85"
-                            alt="Keindahan alam dan budaya Bali"
+                            alt="Beautiful nature and Balinese culture"
                             loading="lazy"
                         >
 
@@ -1471,6 +1443,7 @@
                                 id="customerName"
                                 name="customerName"
                                 placeholder="Enter your name"
+                                autocomplete="name"
                                 required
                             >
                         </div>
@@ -1482,6 +1455,7 @@
                                 id="customerPhone"
                                 name="customerPhone"
                                 placeholder="+62..."
+                                autocomplete="tel"
                                 required
                             >
                         </div>
@@ -1490,12 +1464,12 @@
                             <label for="packageSelect">Choose Package *</label>
                             <select id="packageSelect" name="packageSelect" required>
                                 <option value="">Select a package</option>
-                                <option value="East Bali Package">East Bali Package — Rp650.000/car</option>
-                                <option value="Bali Hiking Experience">Bali Hiking Experience — Rp350.000/person</option>
-                                <option value="Traditional Village Tour">Traditional Village Tour — Rp450.000/car</option>
-                                <option value="Waterfall Adventure">Waterfall Adventure — Rp400.000/person</option>
-                                <option value="Bali Scenic Photo Tour">Bali Scenic Photo Tour — Rp500.000/car</option>
-                                <option value="Private Adventure Trip">Private Adventure Trip — Rp750.000/car</option>
+                                <option value="East Bali Package">East Bali Package — $40/car</option>
+                                <option value="Bali Hiking Experience">Bali Hiking Experience — $22/person</option>
+                                <option value="Traditional Village Tour">Traditional Village Tour — $28/car</option>
+                                <option value="Waterfall Adventure">Waterfall Adventure — $25/person</option>
+                                <option value="Bali Scenic Photo Tour">Bali Scenic Photo Tour — $32/car</option>
+                                <option value="Private Adventure Trip">Private Adventure Trip — $48/car</option>
                             </select>
                         </div>
 
@@ -1549,9 +1523,9 @@
                         </div>
 
                         <p class="form-note">
-                            * The listed prices are starting prices. Final
-                            costs and availability must be confirmed with
-                            the tour provider.
+                            Prices are starting prices in USD. Final costs,
+                            inclusions, and availability must be confirmed
+                            with the tour provider.
                         </p>
 
                     </form>
@@ -1626,14 +1600,15 @@
     </a>
 
     <script>
-        // NAVBAR MOBILE
+        // MOBILE NAVIGATION
         const navToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
 
         navToggle.addEventListener('click', function () {
             const isOpen = navLinks.classList.toggle('open');
 
-            navToggle.setAttribute('aria-expanded', isOpen);
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+
             navToggle.innerHTML = isOpen
                 ? '<i class="fa-solid fa-xmark"></i>'
                 : '<i class="fa-solid fa-bars"></i>';
@@ -1647,7 +1622,7 @@
             });
         });
 
-        // FILTER PAKET
+        // PACKAGE FILTER
         const filterButtons = document.querySelectorAll('.filter-btn');
         const packageCards = document.querySelectorAll('.package-card');
 
@@ -1664,29 +1639,29 @@
                 packageCards.forEach(function (card) {
                     const category = card.dataset.category;
 
-                    if (filter === 'all' || category === filter) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
-                    }
+                    const shouldShow =
+                        filter === 'all' || category === filter;
+
+                    card.classList.toggle('hidden', !shouldShow);
                 });
             });
         });
 
-        // NOMOR WHATSAPP ADMIN
-        // Format internasional tanpa tanda +, spasi, atau tanda hubung.
+        // WHATSAPP ADMIN NUMBER
+        // International format without +, spaces, or hyphens.
         const WHATSAPP_NUMBER = '6281353996452';
 
-        // HARGA PAKET
+        // PACKAGE PRICES IN US DOLLARS
         const packagePrices = {
-            'East Bali Package': 'Rp650.000 / mobil',
-            'Bali Hiking Experience': 'Rp350.000 / orang',
-            'Traditional Village Tour': 'Rp450.000 / mobil',
-            'Waterfall Adventure': 'Rp400.000 / orang',
-            'Bali Scenic Photo Tour': 'Rp500.000 / mobil',
-            'Private Adventure Trip': 'Rp750.000 / mobil'
+            'East Bali Package': '$40 / car',
+            'Bali Hiking Experience': '$22 / person',
+            'Traditional Village Tour': '$28 / car',
+            'Waterfall Adventure': '$25 / person',
+            'Bali Scenic Photo Tour': '$32 / car',
+            'Private Adventure Trip': '$48 / car'
         };
 
+        // OPEN WHATSAPP WITH BOOKING MESSAGE
         function openWhatsApp(message) {
             const url = 'https://wa.me/' + WHATSAPP_NUMBER
                 + '?text=' + encodeURIComponent(message);
@@ -1694,28 +1669,29 @@
             window.open(url, '_blank', 'noopener,noreferrer');
         }
 
-        // BOOKING LANGSUNG DARI KARTU PAKET
+        // BOOK DIRECTLY FROM A PACKAGE CARD
         document.querySelectorAll('.book-btn').forEach(function (button) {
             button.addEventListener('click', function () {
                 const selectedPackage = this.dataset.package;
                 const price = packagePrices[selectedPackage];
 
                 const message =
-                    'Hello BaliTrails! I would like to book a tour.\n\n'
+                    'NEW BOOKING - BALITRAILS\n\n'
                     + 'Package: ' + selectedPackage + '\n'
                     + 'Starting Price: ' + price + '\n\n'
-                    + 'Please provide more information about availability and booking.';
+                    + 'Hello BaliTrails! I would like to ask about availability and booking.';
 
                 openWhatsApp(message);
             });
         });
 
-        // FORM BOOKING
+        // BOOKING FORM
         const bookingForm = document.getElementById('bookingForm');
         const travelDateInput = document.getElementById('travelDate');
 
-        // Tanggal minimal adalah hari ini.
+        // Set the minimum travel date to today.
         const today = new Date();
+
         const localToday = new Date(
             today.getTime() - today.getTimezoneOffset() * 60000
         ).toISOString().split('T')[0];
@@ -1746,14 +1722,24 @@
             const bookingMessage =
                 document.getElementById('bookingMessage').value.trim();
 
-            if (!customerName || !customerPhone || !selectedPackage
-                || !guestCount || !travelDate) {
+            if (
+                !customerName ||
+                !customerPhone ||
+                !selectedPackage ||
+                !guestCount ||
+                !travelDate
+            ) {
                 alert('Please complete all required booking fields.');
                 return;
             }
 
-            if (Number(guestCount) < 1) {
-                alert('The number of guests must be at least 1.');
+            if (Number(guestCount) < 1 || Number(guestCount) > 100) {
+                alert('Please enter between 1 and 100 guests.');
+                return;
+            }
+
+            if (travelDate < localToday) {
+                alert('Please select today or a future travel date.');
                 return;
             }
 
